@@ -12,6 +12,7 @@ alldf = []
 
 for filename in all_files:
     df = pd.read_csv(filename)
+    
     alldf.append(df)
 
 AllEvent = pd.concat(alldf, axis=0, ignore_index=True)    
